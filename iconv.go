@@ -27,7 +27,7 @@ import (
 var EILSEQ = syscall.Errno(C.EILSEQ)
 var E2BIG = syscall.Errno(C.E2BIG)
 
-const DefaultBufSize = 4096
+const DefaultBufSize = 40960
 
 type Iconv struct {
 	Handle C.iconv_t
